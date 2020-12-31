@@ -1,0 +1,17 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter&display=swap');
+
+body {
+    font-family: 'Inter', sans-serif;
+}
+
+.cursor {
+    cursor: pointer;
+}
+
+.link {
+    text-decoration: underline;
+}
+
+footer {
+    max-width: 600px;
+}

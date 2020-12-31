@@ -1,0 +1,56 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <title>Rabool in JS | pwd generator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="container py-5">
+
+
+    <div class="row">
+        <div class="col">
+            <h2>
+                Pwd length:
+                <span class="cursor link" onclick="getPwd(1)">2</span>
+                <span class="cursor link" onclick="getPwd(2)">3</span>
+                <span class="cursor link" onclick="getPwd(3)">4</span>
+            </h2>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col">
+            <p>
+                <span class="text-muted cursor" id="pwd" onclick="copy()"></span><br>
+                <small><span id="tooltip"></span></small>
+            </p>
+        </div>
+
+    </div>
+
+
+    <footer class="pt-5">
+        <small class="text-muted">
+
+            <p>
+                It is the same as <a href="https://www.rabool.eu/" target="_blank">Rabool</a> but written in JavaScript. Generate password using the
+                <a href="http://www.eki.ee/tarkvara/wordlist/soned2013_top1000.txt" target="_blank">1000 most common</a>
+                Estonian words (Ansip and Savisaar, names, countries, words with umlauts excluded). <a href="https://xkcd.com/936/" target="_blank">What makes this password good</a>?
+            </p>
+            <p><span class="text-danger">Use different password everywhere.</span> Password manager (for example <a href="https://bitwarden.com/" target="_blank">Bitwarden</a>) helps you to remember and manage all your passwords.</p>
+        </small>
+
+    </footer>
+
+</div>
+
+<script src="pwd.js"></script>
+</body>
+</html>
